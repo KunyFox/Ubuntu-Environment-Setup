@@ -17,6 +17,6 @@ $ docker pull nvcr.io/nvidia/pytorch:20.11-py3
 Run docker by:
 ---
 ```
-$ docker run --gpus all -it --rm -v local_dir:container_dir nvcr.io/nvidia/pytorch:xx.xx-py3
+$ docker run --gpus all -it --shm-size=32G --rm -v local_dir:container_dir nvcr.io/nvidia/pytorch:xx.xx-py3
 # xx should be your image version.
 ```
